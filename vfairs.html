@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Showcase 2025 - Nashville (vFairs Embed)</title>
+    <style>
+/* Scoped base reset for vFairs container */
+#vfairs-root * { margin: 0; padding: 0; box-sizing: border-box; }
+#vfairs-root { 
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utilities (scoped) */
+#vfairs-root .font-sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+/* Text Colors */
+#vfairs-root .text-slate-900 { color: rgb(15 23 42); }
+#vfairs-root .text-slate-700 { color: rgb(51 65 85); }
+#vfairs-root .text-slate-600 { color: rgb(71 85 105); }
+#vfairs-root .text-slate-500 { color: rgb(100 116 139); }
+#vfairs-root .text-white { color: rgb(255 255 255); }
+#vfairs-root .text-amber-600 { color: rgb(217 119 6); }
+#vfairs-root .text-amber-300 { color: rgb(252 211 77); }
+#vfairs-root .text-amber-800 { color: rgb(146 64 14); }
+#vfairs-root .text-white\/80 { color: rgb(255 255 255 / 0.8); }
+#vfairs-root .text-slate-100\/90 { color: rgb(241 245 249 / 0.9); }
+
+/* Background Colors */
+#vfairs-root .bg-white { background-color: rgb(255 255 255); }
+#vfairs-root .bg-slate-50 { background-color: rgb(248 250 252); }
+#vfairs-root .bg-slate-100 { background-color: rgb(241 245 249); }
+#vfairs-root .bg-slate-900 { background-color: rgb(15 23 42); }
+#vfairs-root .bg-slate-800 { background-color: rgb(30 41 59); }
+#vfairs-root .bg-amber-50 { background-color: rgb(255 251 235); }
+#vfairs-root .bg-amber-100 { background-color: rgb(254 243 199); }
+#vfairs-root .bg-amber-300 { background-color: rgb(252 211 77); }
+#vfairs-root .bg-amber-400 { background-color: rgb(251 191 36); }
+#vfairs-root .bg-amber-500 { background-color: rgb(245 158 11); }
+#vfairs-root .bg-white\/10 { background-color: rgb(255 255 255 / 0.1); }
+#vfairs-root .bg-slate-900\/70 { background-color: rgb(15 23 42 / 0.7); }
+#vfairs-root .bg-slate-900\/40 { background-color: rgb(15 23 42 / 0.4); }
+#vfairs-root .bg-slate-900\/20 { background-color: rgb(15 23 42 / 0.2); }
+#vfairs-root .bg-black\/60 { background-color: rgb(0 0 0 / 0.6); }
+
+/* Borders */
+#vfairs-root .border { border-width: 1px; }
+#vfairs-root .border-t { border-top-width: 1px; }
+#vfairs-root .border-slate-200 { border-color: rgb(226 232 240); }
+#vfairs-root .border-slate-300 { border-color: rgb(203 213 225); }
+#vfairs-root .border-amber-200 { border-color: rgb(254 215 170); }
+
+/* Layout */
+#vfairs-root .sticky { position: sticky; }
+#vfairs-root .relative { position: relative; }
+#vfairs-root .absolute { position: absolute; }
+#vfairs-root .inset-0 { top:0; right:0; bottom:0; left:0; }
+#vfairs-root .inset-x-0 { left:0; right:0; }
+#vfairs-root .top-0 { top:0; }
+#vfairs-root .bottom-0 { bottom:0; }
+#vfairs-root .z-50 { z-index: 50; }
+
+/* Max Width */
+#vfairs-root .max-w-7xl { max-width: 80rem; }
+#vfairs-root .max-w-3xl { max-width: 48rem; }
+
+/* Spacing */
+#vfairs-root .mx-auto { margin-left: auto; margin-right: auto; }
+#vfairs-root .mt-1 { margin-top: 0.25rem; }
+#vfairs-root .mt-2 { margin-top: 0.5rem; }
+#vfairs-root .mt-4 { margin-top: 1rem; }
+#vfairs-root .mt-5 { margin-top: 1.25rem; }
+#vfairs-root .mt-6 { margin-top: 1.5rem; }
+#vfairs-root .mt-8 { margin-top: 2rem; }
+#vfairs-root .mt-10 { margin-top: 2.5rem; }
+#vfairs-root .mb-2 { margin-bottom: 0.5rem; }
+#vfairs-root .mb-4 { margin-bottom: 1rem; }
+#vfairs-root .mb-8 { margin-bottom: 2rem; }
+#vfairs-root .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+#vfairs-root .px-4 { padding-left: 1rem; padding-right: 1rem; }
+#vfairs-root .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+#vfairs-root .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+#vfairs-root .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+#vfairs-root .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+#vfairs-root .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+#vfairs-root .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+#vfairs-root .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+#vfairs-root .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+#vfairs-root .py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+#vfairs-root .py-36 { padding-top: 9rem; padding-bottom: 9rem; }
+#vfairs-root .p-4 { padding: 1rem; }
+#vfairs-root .p-6 { padding: 1.5rem; }
+
+/* Display */
+#vfairs-root .flex { display: flex; }
+#vfairs-root .inline-flex { display: inline-flex; }
+#vfairs-root .grid { display: grid; }
+#vfairs-root .hidden { display: none; }
+#vfairs-root .block { display: block; }
+
+/* Flexbox */
+#vfairs-root .items-center { align-items: center; }
+#vfairs-root .items-start { align-items: flex-start; }
+#vfairs-root .justify-center { justify-content: center; }
+#vfairs-root .justify-between { justify-content: space-between; }
+#vfairs-root .flex-wrap { flex-wrap: wrap; }
+#vfairs-root .flex-col { flex-direction: column; }
+
+/* Gap */
+#vfairs-root .gap-2 { gap: 0.5rem; }
+#vfairs-root .gap-3 { gap: 0.75rem; }
+#vfairs-root .gap-4 { gap: 1rem; }
+#vfairs-root .gap-6 { gap: 1.5rem; }
+#vfairs-root .gap-8 { gap: 2rem; }
+
+/* Width/Height */
+#vfairs-root .w-6 { width: 1.5rem; }
+#vfairs-root .w-9 { width: 2.25rem; }
+#vfairs-root .w-12 { width: 3rem; }
+#vfairs-root .w-full { width: 100%; }
+#vfairs-root .h-6 { height: 1.5rem; }
+#vfairs-root .h-9 { height: 2.25rem; }
+#vfairs-root .h-12 { height: 3rem; }
+#vfairs-root .h-16 { height: 4rem; }
+#vfairs-root .h-full { height: 100%; }
+#vfairs-root .h-\[360px\] { height: 360px; }
+
+/* Typography */
+#vfairs-root .text-xs { font-size: 0.75rem; line-height: 1rem; }
+#vfairs-root .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+#vfairs-root .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+#vfairs-root .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+#vfairs-root .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+#vfairs-root .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+#vfairs-root .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+#vfairs-root .text-6xl { font-size: 3.75rem; line-height: 1; }
+#vfairs-root .font-medium { font-weight: 500; }
+#vfairs-root .font-semibold { font-weight: 600; }
+#vfairs-root .font-bold { font-weight: 700; }
+#vfairs-root .font-extrabold { font-weight: 800; }
+#vfairs-root .leading-tight { line-height: 1.25; }
+#vfairs-root .tracking-tight { letter-spacing: -0.025em; }
+#vfairs-root .tracking-widest { letter-spacing: 0.1em; }
+#vfairs-root .uppercase { text-transform: uppercase; }
+
+/* Radius, shadows, overflow */
+#vfairs-root .rounded-lg { border-radius: 0.5rem; }
+#vfairs-root .rounded-xl { border-radius: 0.75rem; }
+#vfairs-root .rounded-2xl { border-radius: 1rem; }
+#vfairs-root .rounded-3xl { border-radius: 1.5rem; }
+#vfairs-root .rounded-full { border-radius: 9999px; }
+#vfairs-root .shadow { box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); }
+#vfairs-root .shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
+#vfairs-root .overflow-hidden { overflow: hidden; }
+
+/* Object fit */
+#vfairs-root .object-cover { object-fit: cover; }
+
+/* Transitions */
+#vfairs-root .transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4,0,0.2,1); transition-duration: 150ms; }
+#vfairs-root .transition-opacity { transition-property: opacity; transition-timing-function: cubic-bezier(0.4,0,0.2,1); transition-duration: 150ms; }
+#vfairs-root .duration-500 { transition-duration: 500ms; }
+#vfairs-root .scale-105 { transform: scale(1.05); }
+
+/* Opacity */
+#vfairs-root .opacity-0 { opacity: 0; }
+#vfairs-root .opacity-100 { opacity: 1; }
+
+/* Misc */
+#vfairs-root .pointer-events-none { pointer-events: none; }
+#vfairs-root .cursor-pointer { cursor: pointer; }
+#vfairs-root .grid-flow-col { grid-auto-flow: column; }
+#vfairs-root .auto-cols-max { grid-auto-columns: max-content; }
+#vfairs-root .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#vfairs-root .aspect-\[3\/2\] { aspect-ratio: 3 / 2; }
+#vfairs-root .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.25rem; }
+#vfairs-root .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
+#vfairs-root .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
+#vfairs-root .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+#vfairs-root .list-disc { list-style-type: disc; }
+#vfairs-root .list-inside { list-style-position: inside; }
+
+/* Gradients */
+#vfairs-root .bg-gradient-to-t { background-image: linear-gradient(to top, var(--tw-gradient-stops)); }
+#vfairs-root .bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); }
+#vfairs-root .from-slate-900\/70 { --tw-gradient-from: rgb(15 23 42 / 0.7); --tw-gradient-to: rgb(15 23 42 / 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+#vfairs-root .via-slate-900\/40 { --tw-gradient-to: rgb(15 23 42 / 0); --tw-gradient-stops: var(--tw-gradient-from), rgb(15 23 42 / 0.4), var(--tw-gradient-to); }
+#vfairs-root .to-slate-900\/20 { --tw-gradient-to: rgb(15 23 42 / 0.2); }
+#vfairs-root .from-amber-50 { --tw-gradient-from: rgb(255 251 235); --tw-gradient-to: rgb(255 251 235 / 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+#vfairs-root .to-white { --tw-gradient-to: rgb(255 255 255); }
+#vfairs-root .from-white { --tw-gradient-from: rgb(255 255 255); --tw-gradient-to: rgb(255 255 255 / 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+#vfairs-root .to-amber-50 { --tw-gradient-to: rgb(255 251 235); }
+#vfairs-root .from-black\/60 { --tw-gradient-from: rgb(0 0 0 / 0.6); --tw-gradient-to: rgb(0 0 0 / 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+#vfairs-root .to-transparent { --tw-gradient-to: transparent; }
+
+/* Hover */
+#vfairs-root .hover\:text-slate-900:hover { color: rgb(15 23 42); }
+#vfairs-root .hover\:bg-slate-100:hover { background-color: rgb(241 245 249); }
+#vfairs-root .hover\:bg-slate-800:hover { background-color: rgb(30 41 59); }
+#vfairs-root .hover\:bg-amber-300:hover { background-color: rgb(252 211 77); }
+#vfairs-root .hover\:bg-slate-50:hover { background-color: rgb(248 250 252); }
+#vfairs-root .hover\:shadow:hover { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05); }
+
+/* Group hover */
+#vfairs-root .group:hover .group-hover\:scale-105 { transform: scale(1.05); }
+#vfairs-root .group:hover .group-hover\:opacity-100 { opacity: 1; }
+
+/* Focus */
+#vfairs-root .focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
+#vfairs-root .focus\:ring-2:focus { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000); }
+#vfairs-root .focus\:ring-amber-400:focus { --tw-ring-color: rgb(251 191 36); }
+
+/* Screen reader only */
+#vfairs-root .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+
+/* Hero Section */
+#vfairs-root .hero-section { min-height: 100vh; display: flex; align-items: center; }
+#vfairs-root .hero-bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=2400&auto=format&fit=crop'); background-size: cover; background-position: center; }
+
+/* Gallery Grid */
+#vfairs-root .gallery-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1rem; grid-auto-rows: 200px; }
+
+/* Mobile menu toggle (robust: sibling under same parent) */
+#vfairs-root #mobile-menu-toggle { display: none; }
+#vfairs-root #mobile-menu { display: none; }
+#vfairs-root #mobile-menu-toggle:checked ~ #mobile-menu { display: block !important; }
+
+/* Mobile menu link */
+#vfairs-root .mobile-menu-link { display: block; padding: 0.5rem 0.75rem; border-radius: 0.5rem; font-weight: 500; color: rgb(51 65 85); text-decoration: none; }
+#vfairs-root .mobile-menu-link:hover { background-color: rgb(248 250 252); }
+
+/* Form elements */
+#vfairs-root input[type="text"],
+#vfairs-root input[type="email"],
+#vfairs-root input { appearance: none; background-color: rgb(255 255 255); border-color: rgb(203 213 225); border-width: 1px; border-radius: 0.75rem; padding: 0.5rem 0.75rem; font-size: 1rem; line-height: 1.5rem; color: rgb(17 24 39); box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); width: 100%; }
+#vfairs-root input:focus { outline: 2px solid transparent; outline-offset: 2px; --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(251 191 36); --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000); border-color: rgb(251 191 36); }
+#vfairs-root button[type="submit"] { border-radius: 1rem; background-color: rgb(15 23 42); padding: 0.75rem 1.25rem; font-size: 0.875rem; line-height: 1.25rem; font-weight: 600; color: rgb(255 255 255); box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); border: none; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+#vfairs-root button[type="submit"]:hover { background-color: rgb(30 41 59); }
+
+/* Links */
+#vfairs-root a { text-decoration: none; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* Header backdrop */
+#vfairs-root header { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+
+/* Embeds */
+#vfairs-root iframe { border: 0; width: 100%; height: 360px; }
+
+/* Responsive */
+@media (min-width: 640px) {
+    #vfairs-root .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    #vfairs-root .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 768px) {
+    #vfairs-root .md\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+    #vfairs-root .md\:py-36 { padding-top: 9rem; padding-bottom: 9rem; }
+    #vfairs-root .md\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+    #vfairs-root .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+    #vfairs-root .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+    #vfairs-root .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #vfairs-root .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    #vfairs-root .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    #vfairs-root .md\:col-span-2 { grid-column: span 2 / span 2; }
+    #vfairs-root .md\:flex { display: flex; }
+    #vfairs-root .md\:hidden { display: none; }
+    #vfairs-root .md\:flex-row { flex-direction: row; }
+    #vfairs-root .md\:row-span-2 { grid-row: span 2 / span 2; }
+    #vfairs-root .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 200px; }
+    #vfairs-root .gallery-grid figure:nth-child(2) { grid-row: span 2; }
+    #vfairs-root .gallery-grid figure:nth-child(4) { grid-row: span 2; }
+}
+
+@media (min-width: 1024px) {
+    #vfairs-root .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+}
+
+@media (max-width: 640px) {
+    #vfairs-root .text-4xl { font-size: 2rem; line-height: 2.25rem; }
+    #vfairs-root .text-6xl { font-size: 3rem; line-height: 1; }
+    #vfairs-root .py-24 { padding-top: 3rem; padding-bottom: 3rem; }
+    #vfairs-root .py-36 { padding-top: 4rem; padding-bottom: 4rem; }
+    #vfairs-root .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 250px; }
+    #vfairs-root .gallery-grid figure { grid-row: span 1 !important; }
+}
+    </style>
+</head>
+<body>
+    <div id="vfairs-root" class="font-sans text-slate-900 bg-white">
+        <main id="top">
+            <!-- Header -->
+            <header class="sticky top-0 z-50 bg-white" id="header">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <a href="#top" class="flex items-center gap-2">
+                            <div class="w-9 h-9 rounded-2xl bg-amber-500"></div>
+                            <div class="leading-tight">
+                                <div class="font-extrabold tracking-tight text-lg">European Showcase</div>
+                                <div class="text-xs text-slate-500">Nashville • 2025</div>
+                            </div>
+                        </a>
+                        <nav class="hidden md:flex items-center gap-6">
+                            <a href="#about" class="text-sm font-medium text-slate-700 hover:text-slate-900">About</a>
+                            <a href="#gallery" class="text-sm font-medium text-slate-700 hover:text-slate-900">Gallery</a>
+                            <a href="#exhibitors" class="text-sm font-medium text-slate-700 hover:text-slate-900">Exhibitors</a>
+                            <a href="#venue" class="text-sm font-medium text-slate-700 hover:text-slate-900">Venue</a>
+                            <a href="#register" class="text-sm font-medium text-slate-700 hover:text-slate-900">Register</a>
+                            <a href="#faq" class="text-sm font-medium text-slate-700 hover:text-slate-900">FAQ</a>
+                            <a href="#register" class="inline-flex items-center gap-2 rounded-2xl bg-slate-900 text-white text-sm font-semibold px-4 py-2 hover:bg-slate-800">Register</a>
+                        </nav>
+                        <label for="mobile-menu-toggle" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 hover:bg-slate-100 cursor-pointer">
+                            <span class="sr-only">Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <!-- Place the checkbox and the menu as siblings to ensure CSS works on vFairs -->
+                <input type="checkbox" id="mobile-menu-toggle" class="hidden">
+                <div id="mobile-menu" class="md:hidden border-t border-slate-200">
+                    <div class="px-4 py-4 space-y-2">
+                        <a href="#about" class="mobile-menu-link">About</a>
+                        <a href="#gallery" class="mobile-menu-link">Gallery</a>
+                        <a href="#exhibitors" class="mobile-menu-link">Exhibitors</a>
+                        <a href="#venue" class="mobile-menu-link">Venue</a>
+                        <a href="#register" class="mobile-menu-link">Register</a>
+                        <a href="#faq" class="mobile-menu-link">FAQ</a>
+                        <a href="#register" class="mobile-menu-link bg-slate-900 text-white font-semibold text-center">Register</a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Section (image background for vFairs) -->
+            <div class="relative hero-section">
+                <div class="absolute inset-0 overflow-hidden">
+                    <div class="hero-bg"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/40 to-slate-900/20"></div>
+                </div>
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
+                    <div class="max-w-3xl text-white">
+                        <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-amber-100 text-amber-800">Live tasting • Supplier showcase • Trend talks</span>
+                        <h1 class="mt-5 text-4xl md:text-6xl font-extrabold leading-tight">
+                            Europe comes to Nashville — <span class="text-amber-300">European Showcase 2025</span>
+                        </h1>
+                        <p class="mt-4 text-lg md:text-xl text-slate-100/90">
+                            A one-day celebration of Europe's most exciting food, culture, and restaurants. Sample regional classics, meet suppliers, and get menu-ready ideas for your next big rush.
+                        </p>
+                        <div class="mt-6 flex flex-wrap items-center gap-3">
+                            <a href="#register" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-slate-900 font-bold px-5 py-3 shadow hover:bg-amber-300">Save my spot</a>
+                        </div>
+                        <div class="mt-10 grid grid-flow-col auto-cols-max gap-6 text-center">
+                            <div class="bg-white/10 rounded-2xl px-4 py-3">
+                                <div class="text-3xl md:text-4xl font-extrabold">287</div>
+                                <div class="text-xs uppercase tracking-widest text-white/80">Days</div>
+                            </div>
+                            <div class="bg-white/10 rounded-2xl px-4 py-3">
+                                <div class="text-3xl md:text-4xl font-extrabold">14</div>
+                                <div class="text-xs uppercase tracking-widest text-white/80">Hours</div>
+                            </div>
+                            <div class="bg-white/10 rounded-2xl px-4 py-3">
+                                <div class="text-3xl md:text-4xl font-extrabold">32</div>
+                                <div class="text-xs uppercase tracking-widest text-white/80">Minutes</div>
+                            </div>
+                            <div class="bg-white/10 rounded-2xl px-4 py-3">
+                                <div class="text-3xl md:text-4xl font-extrabold">45</div>
+                                <div class="text-xs uppercase tracking-widest text-white/80">Seconds</div>
+                            </div>
+                        </div>
+                        <div class="mt-8 text-sm text-white/80">
+                            Monday, October 6, 2025 • Loveless Cafe • Nashville, TN
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <section id="about" class="py-16 md:py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">About the event</div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Europe's flavors, all in one day</h2>
+                    </div>
+                    <p class="text-slate-600 text-lg max-w-3xl">
+                        The European Showcase brings together chefs, operators, and suppliers for a hands-on tasting tour of the continent.
+                        Expect chef-led bites, new products to try, and a buzzing marketplace of ideas you can take back to your kitchen.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6 mt-10">
+                        <div class="rounded-3xl border border-slate-200 p-6 bg-white shadow-sm">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-4">
+                                <span class="text-2xl">🍽️</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Region-to-Table Tastings</h3>
+                            <p class="mt-2 text-slate-600">From Italian comfort to Mediterranean fresh — taste dishes you can put on a menu tomorrow.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 p-6 bg-white shadow-sm">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-4">
+                                <span class="text-2xl">🍽️</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Supplier Showcase</h3>
+                            <p class="mt-2 text-slate-600">Meet European-focused suppliers and distribution partners. Discover on-trend SKUs and pricing tiers.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 p-6 bg-white shadow-sm">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-4">
+                                <span class="text-2xl">🍽️</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Trend Talks</h3>
+                            <p class="mt-2 text-slate-600">Fast, practical culinary demonstrations on the flavors winning with consumers right now.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="py-16 md:py-24 bg-gradient-to-b from-amber-50 to-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Look & feel</div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Food, streets, and stories of Europe</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4 gallery-grid">
+                        <figure class="relative overflow-hidden rounded-3xl shadow-sm group" data-tag="tomato-cucumber">
+                            <img src="https://source.unsplash.com/JXcgx_U7eh4/1974x1320" alt="Tomato & cucumber plate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-white font-semibold">Mediterranean freshness</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="relative overflow-hidden rounded-3xl shadow-sm group md:row-span-2">
+                            <img src="https://source.unsplash.com/Gi4njnD6isM/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </figure>
+                        <figure class="relative overflow-hidden rounded-3xl shadow-sm group">
+                            <img src="https://source.unsplash.com/dCTcUYWwEc8/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </figure>
+                        <figure class="relative overflow-hidden rounded-3xl shadow-sm group md:row-span-2">
+                            <img src="https://source.unsplash.com/O1MJSIjBS9E/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </figure>
+                        <figure class="relative overflow-hidden rounded-3xl shadow-sm group">
+                            <img src="https://source.unsplash.com/souvaTHUJkY/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </figure>
+                        <figure class="relative overflow-hidden rounded-3xl shadow-sm group">
+                            <img src="https://source.unsplash.com/ogczN9tC4Js/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exhibitors Section -->
+            <section id="exhibitors" class="py-16 md:py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Marketplace</div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Featured exhibitors</h2>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 1</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 2</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 3</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 4</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 5</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 6</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 7</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 8</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 9</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 10</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 11</span>
+                        </div>
+                        <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
+                            <span class="text-slate-500 font-semibold">Exhibitor 12</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 mt-4">This is a placeholder grid — swap with your supplier logos.</p>
+                </div>
+            </section>
+
+            <!-- Venue Section -->
+            <section id="venue" class="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Where to go</div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Loveless Cafe, Nashville</h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6 items-start">
+                        <div class="rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+                            <iframe title="Loveless Cafe Map" src="https://www.google.com/maps?q=Loveless%20Cafe%20Nashville&hl=en&z=14&output=embed" class="w-full h-[360px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div>
+                            <div class="space-y-3 text-slate-700">
+                                <p>
+                                    <strong>Date:</strong> Monday, October 6, 2025<br>
+                                    <strong>Venue:</strong> Loveless Cafe, Nashville, TN
+                                </p>
+                                <p>
+                                    <strong>Travel:</strong> Fly into BNA (Nashville International). Rideshare recommended. On‑site parking available; follow event signage.
+                                </p>
+                                <p>
+                                    <strong>Attire:</strong> Business casual with comfortable shoes — it's a tasting and showcase day.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Register Section -->
+            <section id="register" class="py-16 md:py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Save your seat</div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Free registration</h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <form class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700">First name</label>
+                                    <input name="firstName" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700">Last name</label>
+                                    <input name="lastName" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700">Company</label>
+                                    <input name="company" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700">Role</label>
+                                    <input name="role" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-sm font-medium text-slate-700">Email</label>
+                                    <input type="email" name="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-sm font-medium text-slate-700">Dietary preferences</label>
+                                    <input name="dietary" placeholder="e.g., vegetarian, halal, no nuts" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <button class="rounded-2xl bg-slate-900 text-white font-semibold px-5 py-3 hover:bg-slate-800" type="submit">Register</button>
+                                <a href="#agenda" class="text-slate-600 hover:text-slate-900 font-medium">View agenda</a>
+                            </div>
+                        </form>
+                        <div class="space-y-4">
+                            <div class="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+                                <h3 class="text-lg font-bold text-slate-900">Who should attend?</h3>
+                                <p class="text-slate-700 mt-1">
+                                    Restaurant owners, chefs, menu developers, and category buyers looking for European flavor inspiration and ready‑to‑source products.
+                                </p>
+                            </div>
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                                <h3 class="text-lg font-bold text-slate-900">What you'll leave with</h3>
+                                <ul class="mt-2 space-y-1 list-disc list-inside text-slate-700">
+                                    <li>Recipe cards and costing ideas for LTOs</li>
+                                    <li>Supplier contacts and product specs</li>
+                                    <li>Menu inspiration across six regions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="py-16 md:py-24 bg-slate-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Good to know</div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">FAQ</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-slate-900">Is this free to attend?</h3>
+                            <p class="text-slate-700 mt-2">Yes. Registration is required and space is limited.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-slate-900">Will there be vegetarian/vegan options?</h3>
+                            <p class="text-slate-700 mt-2">Absolutely — the Mediterranean and Nordic pavilions feature plenty of plant‑forward bites.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-slate-900">Can I bring a team member?</h3>
+                            <p class="text-slate-700 mt-2">Yes, please register each attendee individually so we can plan tastings accordingly.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="py-10 border-t border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-600">
+                    <div class="flex items-center gap-2">
+                        <div class="w-9 h-9 rounded-2xl bg-amber-500"></div>
+                        <div>
+                            <div class="font-bold text-slate-900">European Showcase 2025</div>
+                            <div class="text-xs">A celebration of Europe's food & culture</div>
+                        </div>
+                    </div>
+                    <div class="text-sm">© 2024 All rights reserved.</div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+
