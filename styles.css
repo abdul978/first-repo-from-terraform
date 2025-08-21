@@ -1,0 +1,29 @@
+/* Basic enhancements and video fallback helpers */
+html, body {
+  height: 100%;
+}
+
+.hero-section {
+  min-height: 70vh;
+}
+
+/* If video fails, show a nice gradient behind text as well */
+.no-video .hero-fallback {
+  display: block;
+}
+
+.no-video .hero-video {
+  display: none;
+}
+
+/* Gallery helpers to maintain aspect ratios nicely on tall items */
+.gallery-grid figure {
+  aspect-ratio: 4 / 3;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid figure.md\:row-span-2 {
+    aspect-ratio: 4 / 6;
+  }
+}
+
