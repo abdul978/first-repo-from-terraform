@@ -5,326 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>European Showcase 2025 - Nashville</title>
     <link rel="stylesheet" href="/workspace/styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {}
-        }
-      };
-    </script>
-    <script defer src="/workspace/script.js"></script>
-    <link rel="preload" as="video" href="/mnt/data/PFS Nashville  Euro Website Video.mp4">
     <meta name="color-scheme" content="light only">
-    <style>
-      /* Minimal critical styles for hero video fallback */
-      .hero-section { min-height: 70vh; }
-      .no-video .hero-video { display: none; }
-      .no-video .hero-fallback { display: block; }
-      .hero-fallback { display: none; background-size: cover; background-position: center; }
-    </style>
-  </head>
+</head>
 <body>
-    <main id="top" class="font-sans text-slate-900 bg-white">
-        <!-- Header -->
-        <header class="sticky top-0 z-50 bg-white" id="header">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-16">
-                    <a href="#top" class="flex items-center gap-2">
-                        <div class="w-9 h-9 rounded-2xl bg-amber-500"></div>
-                        <div class="leading-tight">
-                            <div class="font-extrabold tracking-tight text-lg">European Showcase</div>
-                            <div class="text-xs text-slate-500">Nashville • 2025</div>
+    <main id="top" class="page">
+        <header class="site-header" id="header">
+            <div class="container">
+                <div class="header-bar">
+                    <a href="#top" class="brand">
+                        <div class="brand-mark"></div>
+                        <div class="brand-text">
+                            <div class="brand-title">European Showcase</div>
+                            <div class="brand-subtitle">Nashville • 2025</div>
                         </div>
                     </a>
-                    <nav class="hidden md:flex items-center gap-6">
-                        <a href="#about" class="text-sm font-medium text-slate-700 hover:text-slate-900">About</a>
-                        <a href="#gallery" class="text-sm font-medium text-slate-700 hover:text-slate-900">Gallery</a>
-                        <a href="#exhibitors" class="text-sm font-medium text-slate-700 hover:text-slate-900">Exhibitors</a>
-                        <a href="#venue" class="text-sm font-medium text-slate-700 hover:text-slate-900">Venue</a>
-                        <a href="#register" class="text-sm font-medium text-slate-700 hover:text-slate-900">Register</a>
-                        <a href="#faq" class="text-sm font-medium text-slate-700 hover:text-slate-900">FAQ</a>
-                        <a href="#register" class="inline-flex items-center gap-2 rounded-2xl bg-slate-900 text-white text-sm font-semibold px-4 py-2 hover:bg-slate-800">Register</a>
-                    </nav>
-                    <label for="mobile-menu-toggle" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 hover:bg-slate-100 cursor-pointer">
-                        <span class="sr-only">Open menu</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle" aria-hidden="true">
+                    <label for="mobile-menu-toggle" class="menu-button" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="menu-icon"></span>
                     </label>
-                    <input type="checkbox" id="mobile-menu-toggle" class="hidden">
+                    <nav class="main-nav">
+                        <a href="#about">About</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#exhibitors">Exhibitors</a>
+                        <a href="#venue">Venue</a>
+                        <a href="#register">Register</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#register" class="button button-primary">Register</a>
+                    </nav>
                 </div>
-            </div>
-            <div id="mobile-menu" class="md:hidden border-t border-slate-200 hidden">
-                <div class="px-4 py-4 space-y-2">
-                    <a href="#about" class="mobile-menu-link block px-3 py-2 rounded-lg hover:bg-slate-50 text-slate-700 font-medium">About</a>
-                    <a href="#gallery" class="mobile-menu-link block px-3 py-2 rounded-lg hover:bg-slate-50 text-slate-700 font-medium">Gallery</a>
-                    <a href="#exhibitors" class="mobile-menu-link block px-3 py-2 rounded-lg hover:bg-slate-50 text-slate-700 font-medium">Exhibitors</a>
-                    <a href="#venue" class="mobile-menu-link block px-3 py-2 rounded-lg hover:bg-slate-50 text-slate-700 font-medium">Venue</a>
-                    <a href="#register" class="mobile-menu-link block px-3 py-2 rounded-lg hover:bg-slate-50 text-slate-700 font-medium">Register</a>
-                    <a href="#faq" class="mobile-menu-link block px-3 py-2 rounded-lg hover:bg-slate-50 text-slate-700 font-medium">FAQ</a>
-                    <a href="#register" class="mobile-menu-link block px-3 py-2 rounded-lg bg-slate-900 text-white font-semibold text-center">Register</a>
+                <div id="mobile-menu" class="mobile-menu">
+                    <a href="#about" class="mobile-menu-link">About</a>
+                    <a href="#gallery" class="mobile-menu-link">Gallery</a>
+                    <a href="#exhibitors" class="mobile-menu-link">Exhibitors</a>
+                    <a href="#venue" class="mobile-menu-link">Venue</a>
+                    <a href="#register" class="mobile-menu-link">Register</a>
+                    <a href="#faq" class="mobile-menu-link">FAQ</a>
+                    <a href="#register" class="mobile-menu-link button button-primary">Register</a>
                 </div>
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <div class="relative hero-section">
-            <div class="absolute inset-0 overflow-hidden">
-                <video autoplay muted loop playsinline class="hero-video w-full h-full object-cover">
+        <div class="hero-section">
+            <div class="hero-media">
+                <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1498654200943-1088dd4438ae?q=80&w=1974&auto=format&fit=crop" class="hero-video">
                     <source src="/mnt/data/PFS Nashville  Euro Website Video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <div class="hero-fallback absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1498654200943-1088dd4438ae?q=80&w=1974&auto=format&fit=crop');"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/40 to-slate-900/20"></div>
+                <div class="hero-overlay"></div>
             </div>
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
-                <div class="max-w-3xl text-white">
-                    <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-amber-100 text-amber-800">Live tasting • Supplier showcase • Trend talks</span>
-                    <h1 class="mt-5 text-4xl md:text-6xl font-extrabold leading-tight">
-                        Europe comes to Nashville — <span class="text-amber-300">European Showcase 2025</span>
-                    </h1>
-                    <p class="mt-4 text-lg md:text-xl text-slate-100/90">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <span class="pill">Live tasting • Supplier showcase • Trend talks</span>
+                    <h1>Europe comes to Nashville — <span class="highlight">European Showcase 2025</span></h1>
+                    <p>
                         A one-day celebration of Europe's most exciting food, culture, and restaurants. Sample regional classics, meet suppliers, and get menu-ready ideas for your next big rush.
                     </p>
-                    <div class="mt-6 flex flex-wrap items-center gap-3">
-                        <a href="#register" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-slate-900 font-bold px-5 py-3 shadow hover:bg-amber-300">Save my spot</a>
+                    <div class="hero-actions">
+                        <a href="#register" class="button button-accent">Save my spot</a>
                     </div>
-                    <div class="mt-10 grid grid-flow-col auto-cols-max gap-6 text-center" id="countdown">
-                        <div class="bg-white/10 rounded-2xl px-4 py-3">
-                            <div class="text-3xl md:text-4xl font-extrabold" id="countdown-days">0</div>
-                            <div class="text-xs uppercase tracking-widest text-white/80">Days</div>
-                        </div>
-                        <div class="bg-white/10 rounded-2xl px-4 py-3">
-                            <div class="text-3xl md:text-4xl font-extrabold" id="countdown-hours">0</div>
-                            <div class="text-xs uppercase tracking-widest text-white/80">Hours</div>
-                        </div>
-                        <div class="bg-white/10 rounded-2xl px-4 py-3">
-                            <div class="text-3xl md:text-4xl font-extrabold" id="countdown-minutes">0</div>
-                            <div class="text-xs uppercase tracking-widest text-white/80">Minutes</div>
-                        </div>
-                        <div class="bg-white/10 rounded-2xl px-4 py-3">
-                            <div class="text-3xl md:text-4xl font-extrabold" id="countdown-seconds">0</div>
-                            <div class="text-xs uppercase tracking-widest text-white/80">Seconds</div>
-                        </div>
+                    <div class="countdown">
+                        <div class="countdown-item"><div class="countdown-value">287</div><div class="countdown-label">Days</div></div>
+                        <div class="countdown-item"><div class="countdown-value">14</div><div class="countdown-label">Hours</div></div>
+                        <div class="countdown-item"><div class="countdown-value">32</div><div class="countdown-label">Minutes</div></div>
+                        <div class="countdown-item"><div class="countdown-value">45</div><div class="countdown-label">Seconds</div></div>
                     </div>
-                    <div class="mt-8 text-sm text-white/80">
-                        Monday, October 6, 2025 • Loveless Cafe • Nashville, TN
-                    </div>
+                    <div class="hero-footnote">Monday, October 6, 2025 • Loveless Cafe • Nashville, TN</div>
                 </div>
             </div>
         </div>
 
-        <!-- About Section -->
-        <section id="about" class="py-16 md:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="about" class="section">
+            <div class="container">
                 <div class="mb-8">
-                    <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">About the event</div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Europe's flavors, all in one day</h2>
+                    <div class="eyebrow">About the event</div>
+                    <h2 class="section-title">Europe's flavors, all in one day</h2>
                 </div>
-                <p class="text-slate-600 text-lg max-w-3xl">
+                <p class="lead">
                     The European Showcase brings together chefs, operators, and suppliers for a hands-on tasting tour of the continent.
                     Expect chef-led bites, new products to try, and a buzzing marketplace of ideas you can take back to your kitchen.
                 </p>
-                <div class="grid md:grid-cols-3 gap-6 mt-10">
-                    <div class="rounded-3xl border border-slate-200 p-6 bg-white shadow-sm">
-                        <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-4">
-                            <span class="text-2xl">🍽️</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900">Region-to-Table Tastings</h3>
-                        <p class="mt-2 text-slate-600">From Italian comfort to Mediterranean fresh — taste dishes you can put on a menu tomorrow.</p>
+                <div class="cards three">
+                    <div class="card">
+                        <div class="card-icon"><span>🍽️</span></div>
+                        <h3 class="card-title">Region-to-Table Tastings</h3>
+                        <p class="card-text">From Italian comfort to Mediterranean fresh — taste dishes you can put on a menu tomorrow.</p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 p-6 bg-white shadow-sm">
-                        <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-4">
-                            <span class="text-2xl">🍽️</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900">Supplier Showcase</h3>
-                        <p class="mt-2 text-slate-600">Meet European-focused suppliers and distribution partners. Discover on-trend SKUs and pricing tiers.</p>
+                    <div class="card">
+                        <div class="card-icon"><span>🍽️</span></div>
+                        <h3 class="card-title">Supplier Showcase</h3>
+                        <p class="card-text">Meet European-focused suppliers and distribution partners. Discover on-trend SKUs and pricing tiers.</p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 p-6 bg-white shadow-sm">
-                        <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-4">
-                            <span class="text-2xl">🍽️</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900">Trend Talks</h3>
-                        <p class="mt-2 text-slate-600">Fast, practical culinary demonstrations on the flavors winning with consumers right now.</p>
+                    <div class="card">
+                        <div class="card-icon"><span>🍽️</span></div>
+                        <h3 class="card-title">Trend Talks</h3>
+                        <p class="card-text">Fast, practical culinary demonstrations on the flavors winning with consumers right now.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="py-16 md:py-24 bg-gradient-to-b from-amber-50 to-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="gallery" class="section section-alt">
+            <div class="container">
                 <div class="mb-8">
-                    <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Look & feel</div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Food, streets, and stories of Europe</h2>
+                    <div class="eyebrow">Look & feel</div>
+                    <h2 class="section-title">Food, streets, and stories of Europe</h2>
                 </div>
-                <div class="grid md:grid-cols-3 gap-4 gallery-grid">
-                    <!-- Image 1: Tomato & cucumber (regular size) -->
-                    <figure class="relative overflow-hidden rounded-3xl shadow-sm group" data-tag="tomato-cucumber">
-                        <img src="https://source.unsplash.com/JXcgx_U7eh4/1974x1320" alt="Tomato & cucumber plate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <span class="text-white font-semibold">Mediterranean freshness</span>
-                        </figcaption>
+                <div class="gallery-grid">
+                    <figure class="gallery-item" data-tag="tomato-cucumber">
+                        <img src="https://source.unsplash.com/JXcgx_U7eh4/1974x1320" alt="Tomato & cucumber plate" class="gallery-img">
+                        <figcaption class="gallery-caption"><span>Mediterranean freshness</span></figcaption>
                     </figure>
-                    <!-- Image 2: Tall image (spans 2 rows) -->
-                    <figure class="relative overflow-hidden rounded-3xl shadow-sm group md:row-span-2">
-                        <img src="https://source.unsplash.com/Gi4njnD6isM/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <figure class="gallery-item tall">
+                        <img src="https://source.unsplash.com/Gi4njnD6isM/1974x1320" alt="European food and culture" class="gallery-img">
                     </figure>
-                    <!-- Image 3: Regular -->
-                    <figure class="relative overflow-hidden rounded-3xl shadow-sm group">
-                        <img src="https://source.unsplash.com/dCTcUYWwEc8/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/dCTcUYWwEc8/1974x1320" alt="European food and culture" class="gallery-img">
                     </figure>
-                    <!-- Image 4: Tall image (spans 2 rows) -->
-                    <figure class="relative overflow-hidden rounded-3xl shadow-sm group md:row-span-2">
-                        <img src="https://source.unsplash.com/O1MJSIjBS9E/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <figure class="gallery-item tall">
+                        <img src="https://source.unsplash.com/O1MJSIjBS9E/1974x1320" alt="European food and culture" class="gallery-img">
                     </figure>
-                    <!-- Image 5: Regular -->
-                    <figure class="relative overflow-hidden rounded-3xl shadow-sm group">
-                        <img src="https://source.unsplash.com/souvaTHUJkY/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/souvaTHUJkY/1974x1320" alt="European food and culture" class="gallery-img">
                     </figure>
-                    <!-- Image 6: Regular -->
-                    <figure class="relative overflow-hidden rounded-3xl shadow-sm group">
-                        <img src="https://source.unsplash.com/ogczN9tC4Js/1974x1320" alt="European food and culture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/ogczN9tC4Js/1974x1320" alt="European food and culture" class="gallery-img">
                     </figure>
                 </div>
             </div>
         </section>
 
-        <!-- Exhibitors Section -->
-        <section id="exhibitors" class="py-16 md:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="exhibitors" class="section">
+            <div class="container">
                 <div class="mb-8">
-                    <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Marketplace</div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Featured exhibitors</h2>
+                    <div class="eyebrow">Marketplace</div>
+                    <h2 class="section-title">Featured exhibitors</h2>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 1</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 2</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 3</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 4</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 5</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 6</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 7</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 8</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 9</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 10</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 11</span>
-                    </div>
-                    <div class="aspect-[3/2] rounded-2xl border border-slate-200 bg-white flex items-center justify-center p-4 hover:shadow">
-                        <span class="text-slate-500 font-semibold">Exhibitor 12</span>
-                    </div>
+                <div class="logo-grid">
+                    <div class="logo-card"><span>Exhibitor 1</span></div>
+                    <div class="logo-card"><span>Exhibitor 2</span></div>
+                    <div class="logo-card"><span>Exhibitor 3</span></div>
+                    <div class="logo-card"><span>Exhibitor 4</span></div>
+                    <div class="logo-card"><span>Exhibitor 5</span></div>
+                    <div class="logo-card"><span>Exhibitor 6</span></div>
+                    <div class="logo-card"><span>Exhibitor 7</span></div>
+                    <div class="logo-card"><span>Exhibitor 8</span></div>
+                    <div class="logo-card"><span>Exhibitor 9</span></div>
+                    <div class="logo-card"><span>Exhibitor 10</span></div>
+                    <div class="logo-card"><span>Exhibitor 11</span></div>
+                    <div class="logo-card"><span>Exhibitor 12</span></div>
                 </div>
-                <p class="text-sm text-slate-500 mt-4">This is a placeholder grid — swap with your supplier logos.</p>
+                <p class="small-muted">This is a placeholder grid — swap with your supplier logos.</p>
             </div>
         </section>
 
-        <!-- Venue Section -->
-        <section id="venue" class="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="venue" class="section section-alt">
+            <div class="container">
                 <div class="mb-8">
-                    <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Where to go</div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Loveless Cafe, Nashville</h2>
+                    <div class="eyebrow">Where to go</div>
+                    <h2 class="section-title">Loveless Cafe, Nashville</h2>
                 </div>
-                <div class="grid md:grid-cols-2 gap-6 items-start">
-                    <div class="rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+                <div class="split">
+                    <div class="map-card">
                         <iframe
                             title="Loveless Cafe Map"
                             src="https://www.google.com/maps?q=Loveless%20Cafe%20Nashville&hl=en&z=14&output=embed"
-                            class="w-full h-[360px]"
+                            class="map-embed"
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                    <div>
-                        <div class="space-y-3 text-slate-700">
-                            <p>
-                                <strong>Date:</strong> Monday, October 6, 2025<br>
-                                <strong>Venue:</strong> Loveless Cafe, Nashville, TN
-                            </p>
-                            <p>
-                                <strong>Travel:</strong> Fly into BNA (Nashville International). Rideshare recommended. On‑site parking available; follow event signage.
-                            </p>
-                            <p>
-                                <strong>Attire:</strong> Business casual with comfortable shoes — it's a tasting and showcase day.
-                            </p>
-                        </div>
+                    <div class="venue-details">
+                        <p>
+                            <strong>Date:</strong> Monday, October 6, 2025<br>
+                            <strong>Venue:</strong> Loveless Cafe, Nashville, TN
+                        </p>
+                        <p>
+                            <strong>Travel:</strong> Fly into BNA (Nashville International). Rideshare recommended. On‑site parking available; follow event signage.
+                        </p>
+                        <p>
+                            <strong>Attire:</strong> Business casual with comfortable shoes — it's a tasting and showcase day.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Register Section -->
-        <section id="register" class="py-16 md:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="register" class="section">
+            <div class="container">
                 <div class="mb-8">
-                    <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Save your seat</div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Free registration</h2>
+                    <div class="eyebrow">Save your seat</div>
+                    <h2 class="section-title">Free registration</h2>
                 </div>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <form class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4">
-                        <div class="grid md:grid-cols-2 gap-4">
+                <div class="split">
+                    <form class="form-card">
+                        <div class="form-grid">
                             <div>
-                                <label class="block text-sm font-medium text-slate-700">First name</label>
-                                <input name="firstName" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-slate-700">Last name</label>
-                                <input name="lastName" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                <label>First name</label>
+                                <input name="firstName" required>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-700">Company</label>
-                                <input name="company" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                <label>Last name</label>
+                                <input name="lastName" required>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-700">Role</label>
-                                <input name="role" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                                <label>Company</label>
+                                <input name="company">
                             </div>
-                            <div class="md:col-span-2">
-                                <label class="block text-sm font-medium text-slate-700">Email</label>
-                                <input type="email" name="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                            <div>
+                                <label>Role</label>
+                                <input name="role">
                             </div>
-                            <div class="md:col-span-2">
-                                <label class="block text-sm font-medium text-slate-700">Dietary preferences</label>
-                                <input name="dietary" placeholder="e.g., vegetarian, halal, no nuts" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                            <div class="full">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="full">
+                                <label>Dietary preferences</label>
+                                <input name="dietary" placeholder="e.g., vegetarian, halal, no nuts">
                             </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <button class="rounded-2xl bg-slate-900 text-white font-semibold px-5 py-3 hover:bg-slate-800" type="submit">Register</button>
-                            <a href="#agenda" class="text-slate-600 hover:text-slate-900 font-medium">View agenda</a>
+                        <div class="form-actions">
+                            <button class="button button-primary" type="submit">Register</button>
+                            <a href="#agenda" class="link">View agenda</a>
                         </div>
                     </form>
-                    <div class="space-y-4">
-                        <div class="rounded-3xl border border-amber-200 bg-amber-50 p-6">
-                            <h3 class="text-lg font-bold text-slate-900">Who should attend?</h3>
-                            <p class="text-slate-700 mt-1">
+                    <div class="info-stack">
+                        <div class="info-card info-accent">
+                            <h3>Who should attend?</h3>
+                            <p>
                                 Restaurant owners, chefs, menu developers, and category buyers looking for European flavor inspiration and ready‑to‑source products.
                             </p>
                         </div>
-                        <div class="rounded-3xl border border-slate-200 bg-white p-6">
-                            <h3 class="text-lg font-bold text-slate-900">What you'll leave with</h3>
-                            <ul class="mt-2 space-y-1 list-disc list-inside text-slate-700">
+                        <div class="info-card">
+                            <h3>What you'll leave with</h3>
+                            <ul>
                                 <li>Recipe cards and costing ideas for LTOs</li>
                                 <li>Supplier contacts and product specs</li>
                                 <li>Menu inspiration across six regions</li>
@@ -335,60 +249,42 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="py-16 md:py-24 bg-slate-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="faq" class="section section-muted">
+            <div class="container">
                 <div class="mb-8">
-                    <div class="uppercase tracking-widest text-sm font-semibold text-amber-600 mb-2">Good to know</div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">FAQ</h2>
+                    <div class="eyebrow">Good to know</div>
+                    <h2 class="section-title">FAQ</h2>
                 </div>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="rounded-3xl border border-slate-200 bg-white p-6">
-                        <h3 class="font-bold text-slate-900">Is this free to attend?</h3>
-                        <p class="text-slate-700 mt-2">Yes. Registration is required and space is limited.</p>
+                <div class="cards three">
+                    <div class="card">
+                        <h3>Is this free to attend?</h3>
+                        <p>Yes. Registration is required and space is limited.</p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 bg-white p-6">
-                        <h3 class="font-bold text-slate-900">Will there be vegetarian/vegan options?</h3>
-                        <p class="text-slate-700 mt-2">Absolutely — the Mediterranean and Nordic pavilions feature plenty of plant‑forward bites.</p>
+                    <div class="card">
+                        <h3>Will there be vegetarian/vegan options?</h3>
+                        <p>Absolutely — the Mediterranean and Nordic pavilions feature plenty of plant‑forward bites.</p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 bg-white p-6">
-                        <h3 class="font-bold text-slate-900">Can I bring a team member?</h3>
-                        <p class="text-slate-700 mt-2">Yes, please register each attendee individually so we can plan tastings accordingly.</p>
+                    <div class="card">
+                        <h3>Can I bring a team member?</h3>
+                        <p>Yes, please register each attendee individually so we can plan tastings accordingly.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="py-10 border-t border-slate-200">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-600">
-                <div class="flex items-center gap-2">
-                    <div class="w-9 h-9 rounded-2xl bg-amber-500"></div>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <div class="brand-mark"></div>
                     <div>
-                        <div class="font-bold text-slate-900">European Showcase 2025</div>
-                        <div class="text-xs">A celebration of Europe's food & culture</div>
+                        <div class="footer-title">European Showcase 2025</div>
+                        <div class="footer-subtitle">A celebration of Europe's food & culture</div>
                     </div>
                 </div>
-                <div class="text-sm">© 2024 All rights reserved.</div>
+                <div class="footer-copy">© 2024 All rights reserved.</div>
             </div>
         </footer>
     </main>
-    <script>
-      // Add a class when video cannot autoplay or fails to load
-      (function() {
-        var root = document.documentElement;
-        var testVideo = document.createElement('video');
-        var canAutoplay = false;
-        try {
-          var playPromise = testVideo.play();
-          if (playPromise && typeof playPromise.catch === 'function') {
-            playPromise.catch(function(){ root.classList.add('no-video'); });
-          }
-        } catch (e) {
-          root.classList.add('no-video');
-        }
-      })();
-    </script>
-  </body>
-  </html>
+</body>
+</html>
 
